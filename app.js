@@ -121,4 +121,17 @@ const quesEngineer = [
     ];
     
 
-]
+//---- prompt
+
+function promptEngineer() {
+    inquirer
+    .prompt(quesEngineer)
+    .then(function (input) {
+        console.log("manager");
+
+        const manager = new Manager(input.name, input.id, input.email, input.officeNumber)
+        teamArr.push(manager);
+
+        createTeam();
+    });
+}
