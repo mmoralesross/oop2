@@ -162,4 +162,20 @@ function promptIntern() {
 
   //----createTeam
 
-  f
+  function createTeam() {
+
+    const createTeamMember = [
+        {
+            type: "list",
+        message: "Which member do you want to add?",
+        name: "role",
+        choices: [
+          "Engineer",
+          "Intern",
+          "Finish Create Team" // This ends adding team member/
+        ]
+      }];
+
+            
+    ]
+  }
