@@ -65,5 +65,60 @@ const quesManager = [
 ];
 
 const quesEngineer = [
+    {
+        type: "input",
+        message: "What is engineer's name?",
+        name: "name"
+      },
+      {
+        type: "input",
+        message: "What is your ID?",
+        name: "id"
+      },
+      // {
+      //   type: "input",
+      //   message: "What is your role?",
+      //   name: "role"
+      // },
+      {
+        type: "input",
+        message: "What is your Email?",
+        name: "email"
+      },
+      {
+        type: "input",
+        message: "What is your Github username?",
+        name: "github"
+      }
+    ];
+    
+    const quesIntern = [
+      {
+        type: "input",
+        message: "What is intern's name?",
+        name: "name"
+      },
+      {
+        type: "input",
+        message: "What is intern's ID?",
+        name: "id"
+      },
+      // {
+      //   type: "input",
+      //   message: "What is your role?",
+      //   name: "role"
+      // },
+      {
+        type: "input",
+        message: "What is intern's Email?",
+        name: "email"
+      },
+      {
+        type: "input",
+        message: "What is intern's school?",
+        name: "school"
+      }
+    ];
+    
 
 ]
