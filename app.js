@@ -122,6 +122,19 @@ const quesEngineer = [
     
 
 //---- prompt
+function promptManager() {
+    inquirer
+      .prompt(quesManager)
+      .then(function (input) {
+        console.log("manager");
+        //if manager? const manager = new Manager(input.name, input.id ....)
+        // if ( username === Manager) {
+        const manager = new Manager(input.name, input.id, input.email, input.officeNumber)
+        teamArr.push(manager);
+
+        createTeam();
+      });
+  }
 
 function promptEngineer() {
     inquirer
@@ -135,3 +148,18 @@ function promptEngineer() {
         createTeam();
     });
 }
+function promptIntern() {
+    inquirer
+      .prompt(quesIntern)
+      .then(function (input) {
+
+        const intern = new Intern(input.name, input.id, input.email, input.school);
+        teamArr.push(intern);
+
+        createTeam();
+      });
+  }
+
+  //----createTeam
+
+  f
